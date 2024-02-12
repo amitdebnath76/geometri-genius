@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry exercise</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.3/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+
+    </header>
+    <main>
+        <div class="flex gap-10 mt-10">
+            <!-- Geometry card section -->
+            <div class="flex gap-8">
+                <!-- Triangle Card  -->
+                <div class="card card-compact w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/triangle.png" /></figure>
+                    <div class="card-body">
+                      <h2 class="  text-center ">Triangle</h2>
+                      <p class="text-2xl text-black  text-center">Area (A) = 0.5 x base x hight</p>
+                      <div class="flex gap-4">
+                        <input id="tri-base" class="w-32 bg-slate-300 text-2xl " type="text" placeholder="base"> <span>cm</span>
+                        <input id="tri-hight" class="w-32 bg-slate-300 text-2xl"  type="text" placeholder="hight"> <span>cm</span>
+                      </div>
+                      <div>
+                        <p  class="text-2xl">Area: <span id="show-area"></span> <span>cm <sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions justify-end">
+                        <button onclick="triangleArea()" class="btn btn-primary w-full">Calculation</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Reactangle card -->
+                  <div class="card card-compact w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/rectangle.png" /></figure>
+                    <div class="card-body">
+                      <h2 class="  text-center ">Rectangle</h2>
+                      <p class="text-2xl text-black  text-center">Area (A) = width x hight</p>
+                      <div class="flex gap-4">
+                        <input id="rect-width" class="w-32 bg-slate-300 text-2xl " type="text" placeholder="width"> <span>cm</span>
+                        <input id="rect-hight" class="w-32 bg-slate-300 text-2xl"  type="text" placeholder="hight"> <span>cm</span>
+                      </div>
+                      <div>
+                        <p  class="text-2xl">Area: <span id="rect-show-area"></span> <span>cm <sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions justify-end">
+                        <button onclick="rectAngleArea()" class="btn btn-primary w-full">Calculation</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Parallelogram card -->
+                  <div class="card card-compact w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/parallelogram.png" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-center ">Rectangle</h2>
+                      <p class="text-2xl text-black  text-center">Area (A) = base x hight</p>
+                      <div class="flex gap-4">
+                        <input id="poly-base" class="w-32 bg-slate-300 text-2xl " type="text" placeholder="base"> <span>cm</span>
+                        <input id="poly-hight" class="w-32 bg-slate-300 text-2xl"  type="text" placeholder="hight"> <span>cm</span>
+                      </div>
+                      <div>
+                        <p  class="text-2xl">Area: <span id="poly-show-area"></span> <span>cm <sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions justify-end">
+                        <button onclick="parallelogramAngleArea()" class="btn btn-primary w-full">Calculation</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- Area calculation section -->
+            <div class="w-96 h-96 bg-slate-400 rounded-xl">
+                <p class="text-center"> Area Calculation</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
